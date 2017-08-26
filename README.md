@@ -3,4 +3,7 @@
 `$ cd adhack`</br>
 `$ virtualenv venv -p python3`</br>
 `$ source venv/bin/activate`</br>
-`$ pip install -r requirements.txt`
+`$ pip install -r requirements.txt`</br>
+
+`$ python manage.py migrate`</br>
+`$ python manage.py runserver`</br>
