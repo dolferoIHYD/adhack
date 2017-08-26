@@ -7,7 +7,10 @@ def index(request):
 
 
 def landing_view(request):
-    name = get_name(request.POST.get('name'))
+    if request.POST.get('name'):
+        name = request.POST.get('name'):
+    else:
+        name = get_name()
     ctx = {
         'name': name,
         'logo': get_logo(name),
