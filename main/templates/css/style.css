@@ -8,27 +8,21 @@ background: -webkit-linear-gradient(top, rgba(161,158,201,1) 0%,rgba(161,155,199
 background: linear-gradient(to bottom, rgba(161,158,201,1) 0%,rgba(161,155,199,1) 15%,rgba(161,155,199,1) 15%,rgba(170,155,188,1) 28%,rgba(170,155,188,1) 28%,rgba(203,163,172,1) 43%,rgba(203,163,172,1) 43%,rgba(220,155,151,1) 51%,rgba(206,131,138,1) 63%,rgba(206,131,138,1) 63%,rgba(179,106,125,1) 75%,rgba(136,79,112,1) 90%,rgba(92,61,105,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ 
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a19ec9', endColorstr='#5c3d69',GradientType=0 ); /* IE6-9 */
 }
-.bgdiv{
-	background-color: azure;
-	height: 45vh;
-	width: 25vw;
-	margin-top: 20vh;
-	margin-left: 35vw;
-}
-.bdiv > .bgdiv{
+
+.bdiv{
 	min-width: 100vw;
     min-height: 100vh;
     position: relative;
 }
 .logo{
-	width: 10vw;
-	height: 10vw;
-	min-height: 50px;
-	min-width: 50px;
-	background-color: aqua;
+	width: 35vw;
+	height: 35vh;
+	background-image: url(../img/logo.png);
+	background-size: contain;
+	background-repeat: no-repeat;
 	align-self: center;
-	margin-top: 5vh;
-	margin-left: 7vw;
+	margin-top: 10vh;
+	margin-left: 42vw;
 	
 }
 .name{
@@ -38,6 +32,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a19ec9', end
 .lowername{
 	font-size: 2.5vh;
 	text-align: center;
+}
+.textareamp{
+	width: 9vw;		
+	margin-left: 7.5vw;	
+	height: 2vw;
+	resize:none;
+	border-radius: 0.5vw;
 }
 button{
 	margin-left: 7.5vw;
