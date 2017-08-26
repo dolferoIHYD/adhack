@@ -1,20 +1,12 @@
-def get_name(keywords):
-    if keywords:
-        pass
-    else:
-        pass
-    return name
+from selenium import webdriver
 
+class Parser:
+    def __init__(self):
+        self.driver = webdriver.Firefox()
 
-def get_logo(name):
-    # save picture
-    logo = path_to_pic
-    return logo
-
-
-def get_slogan(name):
-    return slogan
-
-
-def get_visit_card(name):
-    pass
+    def get_name(self, keywords):
+        if keywords:
+            pass
+        else:
+            pass
+        return name
