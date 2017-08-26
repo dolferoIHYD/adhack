@@ -27,6 +27,10 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+GODADDY_KEY = 'dLDFHNYRyYup_4ABbQJkQ6nTDbBoEhvApjX'
+GODADDY_SECRET = '4ABdYQrGvX8MeLGNEeVWCM'
+GODADDY_API = 'https://api.godaddy.com/v1/domains/available?domain='
+
 
 # Application definition
 
