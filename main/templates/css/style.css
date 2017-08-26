@@ -36,7 +36,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a19ec9', end
 	width: 100%;
 }
 .textareamp{
-	margin-left: 5vw;
+	margin-left: 42vw;
+	resize: none;
 }
 .selectmp{
 	
