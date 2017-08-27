@@ -1,6 +1,5 @@
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
-from selenium.webdriver.common.touch_actions import TouchActions
 import time
 
 class Parser:
@@ -54,3 +53,29 @@ class Parser:
         except:
             print("except")
         return lnk
+
+    def create_card(self, company):
+        self.driver.get('http://www.lemonprint.ru/vizitki/edit.aspx?template_id=Man03')
+        input_name = self.driver.find_element_by_xpath('//*[@id="TextInputArea"]/li[1]/textarea')
+        input_name.send_keys('Pavel')
+        input_surname = self.driver.find_element_by_xpath('//*[@id="TextInputArea"]/li[2]/textarea')
+        input_surname.send_keys('Technique')
+        input_company = self.driver.find_element_by_xpath('//*[@id="TextInputArea"]/li[3]/textarea')
+        input_company.send_keys(company)
+        input_adress = self.driver.find_element_by_xpath('//*[@id="TextInputArea"]/li[4]/textarea')
+        input_adress.send_keys('Lefortovo')
+        input_adress_empty =self.driver.find_element_by_xpath('//*[@id="TextInputArea"]/li[5]/textarea')
+        input_adress_empty.send_keys('')
+        input_phone = self.driver.find_element_by_xpath('//*[@id="TextInputArea"]/li[6]/textarea')
+        input_phone.send_keys('+79999999999')
+        input_email = self.driver.find_element_by_xpath('//*[@id="TextInputArea"]/li[7]/textarea')
+        input_email.send_keys('xanax@cunteinyr.com')
+        input_site = self.driver.find_element_by_xpath('//*[@id="TextInputArea"]/li[8]/textarea')
+        input_site.send_keys('www.rap.com')
+        btn_next = self.driver.find_element_by_xpath('//*[@id="btnSave"]')
+        btn_next.send_keys(Keys.ENTER)
+        time.sleep(4)
+        card = self.driver.find_element_by_xpath('//*[@id="DocumentView"]/a[2]/img')
+        link = card.get_attribute('src')
+        self.driver.get(link)
+        return link
