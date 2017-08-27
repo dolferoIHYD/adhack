@@ -39,6 +39,7 @@ width: 75px; /* вместо ноля ваше значение */
 }
 
 .mainblock{
+  position: absolute;
   background-color: white;
   width: 50%;
   height: 100%;
@@ -49,23 +50,52 @@ width: 75px; /* вместо ноля ваше значение */
 }
 
   .nameblock{
+    font-size: 32px;
+    padding-top: 3%;
+    font-family: 'Noto Sans', bold;
+    text-align: center;
     float: left;
-    background-color: red;
     width: 50%;
-    height: 5%;
+    height: 10%;
 }
   .domain{
+    align-content: center;
+    text-align: center;
     float:left;
-    background-color: green;
     width: 50%;
-    height: 5%;
+    height: 10%;
+}
+.domainimg{
+
+  margin-top: 3%;
+  margin-left: 3%;
+  float: left;
+  background-image: url('../img/gal.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 64px;
+  width: 64px;
+}
+.domaintext{
+  float: right;
+  margin-right: 20%;
+  margin-top: 5%;
+  color: #3adb15;
+  font-family: 'Noto Sans', bold;
+  text-align: left;
+  vertical-align: middle;
+  font-size: 200%;
 }
 
-
 .slogan{
-  background-color: blue;
-  width: 50%;
+  text-align: left;
+  margin-top: 10.15%;
+  width: 100%;
   height: 10%;
+  font-size: 32px;
+  padding-top: 3%;
+  font-family: 'Noto Sans', bold;
+  text-align: center;
 }
 
 
@@ -75,27 +105,62 @@ width: 75px; /* вместо ноля ваше значение */
 
   .miniatureblock{
     float: left;
-    background-color: red;
-    width: 50%;
-    height: 5%;
+    margin-left: 6%;
+    margin-right: 3%;
+    background-color: #f8f8f8;
+    width: 40%;
+    height: 20%;
+    border-radius: 50px 50px 50px 50px;
+    border: 2px solid black
 }
   .logoblock{
+    border-radius: 50px 50px 50px 50px;
     float:left;
-    background-color: green;
-    width: 50%;
-    height: 5%;
+    margin-left: 3%;
+    margin-right: 6%;
+    background-color: #f8f8f8;
+    width: 40%;
+    height: 20%;
+    border: 2px solid black
+}
+.texts{
+  text-align: center;
+  vertical-align: middle;
+  font-family: 'Noto Sans', bold;
+  font-size: 32px;
+  height: 5%;
+  width: 100%
+}
+.textlogo{
+  float: left;
+width: 49.9%;
 }
 
+.textminiature{
+  float: left;
+width: 49.9%;
+}
 
 .visit{
+  margin-top: 22%;
   margin-left: 25%;
-  background-color: blue;
   width: 50%;
-  height: 10%;
+  height: 20%;
+  border: 2px solid black;
+  background-color: #f8f8f8;
+  border-radius: 50px 50px 50px 50px;
 }
 .kupi{
+  color: white;
+  text-align: center;
+  vertical-align: middle;
+  font-family: 'Noto Sans', bold;
+  padding-top: 5px;
+  font-size: 48px;
+  margin-top: 5%;
   margin-left: 25%;
   background-color: red;
   width: 50%;
-  height: 5%;
+  height: 10%;
+  border-radius: 50px 50px 50px 50px
 }
