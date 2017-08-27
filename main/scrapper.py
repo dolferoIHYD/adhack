@@ -56,7 +56,10 @@ class Parser:
 
     def create_card(self, company):
         self.driver.get('http://www.lemonprint.ru/vizitki/edit.aspx?template_id=Man03')
+        close = self.driver.find_element_by_xpath('//*[@id="CityPopContent"]/span').click()
         input_name = self.driver.find_element_by_xpath('//*[@id="TextInputArea"]/li[1]/textarea')
+        input_name.send_keys('')
+        time.sleep(0.2)
         input_name.send_keys('Pavel')
         input_surname = self.driver.find_element_by_xpath('//*[@id="TextInputArea"]/li[2]/textarea')
         input_surname.send_keys('Technique')
