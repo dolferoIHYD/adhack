@@ -20,17 +20,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a19ec9', end
 	background-size: contain;
 	background-repeat: no-repeat;
 	margin-left: 41.5vw; }
-@-moz-document url-prefix()
-{
-	.block{
-		position: absolute;
-		align-content: center;
-		background-color: white;
-		margin-top: 40vh;
-		margin-left: 37.75vw;
-		height: 35vh;
-		width: 25vw;
-		border-radius: 2vw; }
 
 .bdiv{
 	min-width: 100vw;
