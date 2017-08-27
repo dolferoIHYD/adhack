@@ -10,6 +10,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a19ec9', end
 }
 
 .bdiv{
+	font-family: 'Noto Sans', sans-serif;
 	min-width: 100vw;
     min-height: 100vh;
 		position: absolute;
