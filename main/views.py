@@ -20,4 +20,4 @@ def landing_view(request, slug):
         'name': name,
         'logo': ''#get_logo(name),
     }
-    return render(request, 'arsha.html', ctx)
+    return render(request, 'site2.html', ctx)
