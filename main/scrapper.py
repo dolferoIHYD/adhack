@@ -36,3 +36,13 @@ class Parser:
         link = image.get_attribute('src')
        # return 'https://www.logoshuffle.com()'.format(link)
         return link
+
+    def get_picture(self, quwery):
+        self.driver.get('https://www.google.ru/search?q={}&newwindow=1&rlz=1C1CHWL_ruRU751RU752&tbs=isz:l,itp:photo,sur:fmc&tbm=isch&source=lnt&sa=X&ved=0ahUKEwjfq-28ivbVAhUqS5oKHdpGCfoQpwUIHQ&biw=1242&bih=636&dpr=1.1'.format(quwery))
+        try:
+            time.sleep(2)
+            gimage = self.driver.find_element_by_xpath('//*[@id="rg_s"]/div[1]/a/img')
+            glink = gimage.get_attribute('src')
+        except:
+            print ('fuck it')
+        return glink
