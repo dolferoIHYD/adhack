@@ -10,24 +10,27 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a19ec9', end
 }
 
 .bdiv{
+	font-family: 'Noto Sans', sans-serif;
 	min-width: 100vw;
     min-height: 100vh;
 		position: absolute;
 }
 .logo{
+
 	position: absolute;
 	width: 34vw;
 	height: 35vh;
 	background-image: url(../img/logo2.png);
 	background-size: contain;
 	background-repeat: no-repeat;
+	margin-top: 5vh;
 	margin-left: 41.5vw;
 }
 .block{
 	position: absolute;
 	align-content: center;
 	background-color: white;
-	margin-top: 40vh;
+	margin-top: 45vh;
 	margin-left: 37.75vw;
 	height: 35vh;
 	width: 25vw;
