@@ -80,5 +80,4 @@ class Parser:
         time.sleep(4)
         card = self.driver.find_element_by_xpath('//*[@id="DocumentView"]/a[2]/img')
         link = card.get_attribute('src')
-        self.driver.get(link)
         return link

@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Landing Page - Start Bootstrap Theme</title>
+    <title>{{ name }} - e:Drozd</title>
 
     <!-- Bootstrap core CSS -->
     <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
@@ -52,8 +52,9 @@
     <header class="intro-header">
       <div class="container">
         <div class="intro-message">
-          <h1>Landing Page</h1>
-          <h3>A Template by Start Bootstrap</h3>
+          <img src="{{ logo }}" alt="your-awesome-logo" />
+          <h1>{{ name }}</h1>
+          <h3>{{ slogan }}</h3>
 
         </div>
       </div>
