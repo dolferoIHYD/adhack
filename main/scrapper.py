@@ -1,5 +1,6 @@
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.common.touch_actions import TouchActions
 import time
 
 class Parser:
@@ -41,8 +42,15 @@ class Parser:
         self.driver.get('https://www.google.ru/search?q={}&newwindow=1&rlz=1C1CHWL_ruRU751RU752&tbs=isz:l,itp:photo,sur:fmc&tbm=isch&source=lnt&sa=X&ved=0ahUKEwjfq-28ivbVAhUqS5oKHdpGCfoQpwUIHQ&biw=1242&bih=636&dpr=1.1'.format(quwery))
         try:
             time.sleep(2)
-            gimage = self.driver.find_element_by_xpath('//*[@id="rg_s"]/div[1]/a/img')
-            glink = gimage.get_attribute('src')
+            gimage = self.driver.find_element_by_xpath('//*[@id="rg_s"]/div[1]/a/img').click()
         except:
             print ('fuck it')
-        return glink
+
+        try:
+            time.sleep(5)
+            button = self.driver.find_element_by_xpath('//*[@id="irc_cc"]/div[2]/div[3]/div[1]/div/div[2]/table[1]/tbody/tr/td[2]/a')
+            lnk =   button.get_attribute('href')
+            print(lnk)
+        except:
+            print("except")
+        return lnk
