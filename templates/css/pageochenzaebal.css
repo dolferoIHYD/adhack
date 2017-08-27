@@ -1,7 +1,9 @@
+
 * {
  margin: 0;
  padding: 0;
 }
+
 body, html{
   width: 97.95vw;
   height: 100%;
@@ -17,6 +19,8 @@ background: linear-gradient(to bottom, rgba(161,158,201,1) 0%,rgba(161,155,199,1
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a19ec9', endColorstr='#5c3d69',GradientType=0 ); /* IE6-9 */
 }
 .header{
+  font-family: 'Noto Sans', sans-serif;
+  color: white;
   margin-top: -1.25%;
   padding-top: 1.25%;
   padding-left: 22px;
