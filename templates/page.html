@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <title>Adhack</title>
 <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
 <!--хуйня для сервера-->
 <link rel="stylesheet" href="{% static 'css/pageochenzaebal.css' %}">
 <!--локальные стили-->
@@ -12,45 +13,52 @@
 
 <body>
 
-  <div class="header">
-      <div class="headimg"></div>
-      <div class="headname" style="margin-left: 85%; margin-top:5px"><font><h1>e:Drozd</h1></font></div>
-  </div>
-<div class="mainblock">
 
-
-
-  <div class="head">
-        <div class="nameblock" ><font style="   font-family: 'Noto Sans', bold;
-          text-align: center;border-bottom: 3px solid blue ">Имя вашей компании</font></div>
-        <div class="domain">
-          <div class="domainimg"></div>
-          <div class="domaintext"><font style="   font-family: 'Noto Sans', bold;
-            text-align: center;border-bottom: 3px solid #3adb15 ">Домен свободен</font></div>
-        </div>
-
-</div>
-
-  <div class="slogan"><font style="   font-family: 'Noto Sans', bold;
-    text-align: center;border-bottom: 3px solid red; text-align: left ">Ваш Слоган</font></div>
-
-
-  <div class="minsblock">
-    <div class="miniatureblock"></div>
-    <div class="logoblock"></div>
-  </div>
-<div class="texts">
-  <div class="textlogo"><font style="border-bottom: 4px solid blue">Лого</font></div>
-  <div class="textminiature"><font style="border-bottom: 3px solid red">Сайт</font></div>
-</div>
-
-  <div class="visit">
+  <!--верхний слайдер-->
+  <div class="topslider">
+    <div class="toplogo"></div>
+    <div class="topname">e:Drozd</div>
   </div>
 
+  <div class="slogan1">Мы подобрали подходящее вам название</div>
+  <div class="slogan2">%SLOGAN</div>
+  <div class="slogan3">К красивому названию - подобающие лого и слоган</div>
+  <div class="slogan4">А ниже - ваш сайт в миниатюре</div>
+  <div class="slogan5">Без визитки - Никуда!</div>
+  <div class="slogan6">Осталось только оплатить</div>
+  <!-- Фон тела-->
+  <div class="maincontainer">
 
-  <div class="kupi">Купить
+    <div class="companynamebody">
+        <div class="copmpanyname">%Companyname</div>
+        <div class="domainlogo" data-title="Домен Доступен!"><img src="../templates/img/gal.png" alt="" height="64px" width="64px"></img></div>
+    </div>
+
+
+    <div class="logocontainer">
+      <img src="../templates/img/logo2.png" alt="" class="roundimgcontainer"
+    </div>
+    <div class="webcontainername"></div>
+    <div class="webcontainer"></div>
+
+    <div class="visitka">
+      <div class="invisitka"><img src="" alt=""></img></div>
+    </div>
+    <input type="submit" name="submit" value="Создать" style="
+      font-size: 2.5vh;
+      color: white;
+      margin-top: 193.75%;
+      border-radius: 0.5vw;
+      min-width: 50px;
+      background-color: #884F70;
+      width: 100%;
+      height: 2.5vw;
+      border: 1 solid gray;
+      outline: 0;">
   </div>
 
-</div>
+
+
+
 </body>
 </html>

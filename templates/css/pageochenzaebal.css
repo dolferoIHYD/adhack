@@ -1,166 +1,197 @@
-
-* {
- margin: 0;
- padding: 0;
+*{
+margin:0;
+padding:0;
 }
 
-body, html{
-  width: 97.95vw;
-  height: 100%;
+html, body{
+  width: 100%;
+  height: 2320px;
 }
 body{
-position: absolute;
-background-size: cover;
-background-repeat: no-repeat;
-background: rgb(161,158,201); /* Old browsers */
-background: -moz-linear-gradient(top, rgba(161,158,201,1) 0%, rgba(161,155,199,1) 15%, rgba(161,155,199,1) 15%, rgba(170,155,188,1) 28%, rgba(170,155,188,1) 28%, rgba(203,163,172,1) 43%, rgba(203,163,172,1) 43%, rgba(220,155,151,1) 51%, rgba(206,131,138,1) 63%, rgba(206,131,138,1) 63%, rgba(179,106,125,1) 75%, rgba(136,79,112,1) 90%, rgba(92,61,105,1) 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top, rgba(161,158,201,1) 0%,rgba(161,155,199,1) 15%,rgba(161,155,199,1) 15%,rgba(170,155,188,1) 28%,rgba(170,155,188,1) 28%,rgba(203,163,172,1) 43%,rgba(203,163,172,1) 43%,rgba(220,155,151,1) 51%,rgba(206,131,138,1) 63%,rgba(206,131,138,1) 63%,rgba(179,106,125,1) 75%,rgba(136,79,112,1) 90%,rgba(92,61,105,1) 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom, rgba(161,158,201,1) 0%,rgba(161,155,199,1) 15%,rgba(161,155,199,1) 15%,rgba(170,155,188,1) 28%,rgba(170,155,188,1) 28%,rgba(203,163,172,1) 43%,rgba(203,163,172,1) 43%,rgba(220,155,151,1) 51%,rgba(206,131,138,1) 63%,rgba(206,131,138,1) 63%,rgba(179,106,125,1) 75%,rgba(136,79,112,1) 90%,rgba(92,61,105,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a19ec9', endColorstr='#5c3d69',GradientType=0 ); /* IE6-9 */
-}
-.header{
-  font-family: 'Noto Sans', sans-serif;
-  color: white;
-  margin-top: -1.25%;
-  padding-top: 1.25%;
-  padding-left: 22px;
-  padding-bottom: 2px;
-  background-color: #79496e ;
-  width: 100%;
-  height: 50px;
-}
-.headimg{
-float: left;
-background-image: url('../img/logosmall.png');
-background-size: contain;
-background-repeat: no-repeat;
-height: 100%; /* вместо ноля ваше значение */
-width: 75px; /* вместо ноля ваше значение */
-}
-
-.mainblock{
+  background: #a19ec9; /* Old browsers */
+  background: -moz-linear-gradient(top, #a19ec9 0%, #a19bc7 15%, #a19bc7 15%, #aa9bbc 28%, #aa9bbc 28%, #cba3ac 43%, #cba3ac 43%, #dc9b97 51%, #ce838a 63%, #ce838a 63%, #b36a7d 75%, #884f70 90%, #5c3d69 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #a19ec9 0%,#a19bc7 15%,#a19bc7 15%,#aa9bbc 28%,#aa9bbc 28%,#cba3ac 43%,#cba3ac 43%,#dc9b97 51%,#ce838a 63%,#ce838a 63%,#b36a7d 75%,#884f70 90%,#5c3d69 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #a19ec9 0%,#a19bc7 15%,#a19bc7 15%,#aa9bbc 28%,#aa9bbc 28%,#cba3ac 43%,#cba3ac 43%,#dc9b97 51%,#ce838a 63%,#ce838a 63%,#b36a7d 75%,#884f70 90%,#5c3d69 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a19ec9', endColorstr='#5c3d69',GradientType=0 ); /* IE6-9 */
+  background-size: 110% 110% cover;}
+/*полоска сверху**/
+.topslider{
+  min-height: 64px;
   position: absolute;
-  background-color: white;
-  width: 50%;
-  height: 100%;
-  margin-left: 25%;
-}
-.head{
+  background-color: #bda0b3;
   width: 100%;
+  height: 7%;
+  border-bottom: 1px solid black;
 }
-
-  .nameblock{
-    font-size: 32px;
-    padding-top: 3%;
-    font-family: 'Noto Sans', bold;
-    text-align: center;
-    float: left;
-    width: 50%;
-    height: 10%;
-}
-  .domain{
-    align-content: center;
-    text-align: center;
-    float:left;
-    width: 50%;
-    height: 10%;
-}
-.domainimg{
-
-  margin-top: 3%;
-  margin-left: 3%;
-  float: left;
-  background-image: url('../img/gal.png');
-  background-size: contain;
+.toplogo{
+  position: inherit;
+  min-width: 64px;
+  min-height: 64px;
+  background-image: url('../img/logosmall.png');
   background-repeat: no-repeat;
-  height: 64px;
-  width: 64px;
+  background-size: cover;
+  float: left;
+  height: 100%;
+  width: 3.5%;
+
+
 }
-.domaintext{
+.topname{
+  position: inherit;
+  min-height: 64px;
+  min-width: 200px;
+  font-family: 'Noto Sans', bold;
+  margin-left: 88%;
+  margin-right: 2%;
+  text-align: center;
+  font-size: 300%;
+  height: 100%;
+  width: 10%;
   float: right;
-  margin-right: 20%;
-  margin-top: 5%;
-  color: #3adb15;
-  font-family: 'Noto Sans', bold;
-  text-align: left;
-  vertical-align: middle;
+}
+
+.slogan1{
+  text-align: center;
   font-size: 200%;
-}
-
-.slogan{
-  text-align: left;
-  margin-top: 10.15%;
-  width: 100%;
-  height: 10%;
-  font-size: 32px;
-  padding-top: 3%;
   font-family: 'Noto Sans', bold;
+  position: absolute;
+  margin-top: 3.5%;
+  margin-left: 25%;
+  width: 50%;
+  height: 6%;
+}
+.slogan2{
   text-align: center;
-}
-
-
-.minsblock{
-  width: 100%;
-}
-
-  .miniatureblock{
-    float: left;
-    margin-left: 6%;
-    margin-right: 3%;
-    background-color: #f8f8f8;
-    width: 40%;
-    height: 20%;
-    border-radius: 50px 50px 50px 50px;
-    border: 2px solid black
-}
-  .logoblock{
-    border-radius: 50px 50px 50px 50px;
-    float:left;
-    margin-left: 3%;
-    margin-right: 6%;
-    background-color: #f8f8f8;
-    width: 40%;
-    height: 20%;
-    border: 2px solid black
-}
-.texts{
-  text-align: center;
-  vertical-align: middle;
+  font-size: 200%;
   font-family: 'Noto Sans', bold;
-  font-size: 32px;
+  position: absolute;
+  margin-top: 32.5%;
+  margin-left: 25%;
+  width: 50%;
+  height: 6%;
+  border-bottom: 1px solid gray
+}
+.slogan3{
+  text-align: center;
+  font-size: 200%;
+  font-family: 'Noto Sans', bold;
+  position: absolute;
+  margin-top: 36%;
+  margin-left: 25%;
+  width: 50%;
+  height: 6%;
+}
+.slogan4{
+  text-align: center;
+  font-size: 200%;
+  font-family: 'Noto Sans', bold;
+  position: absolute;
+  margin-top: 39%;
+  margin-left: 25%;
+  width: 50%;
+  height: 6%;
+  border-bottom: 3px solid #c4a1b0
+}
+.slogan5{
+  text-align: center;
+  font-size: 200%;
+font-family: 'Noto Sans', bold;
+  position: absolute;
+  margin-top: 89.5%;
+  margin-left: 25%;
+  width: 50%;
+  height: 6%;
+  border-bottom: 1px solid gray
+}
+.slogan6{
+  text-align: center;
+  font-size: 200%;
+  font-family: 'Noto Sans', bold;
+  position: absolute;
+  margin-top: 116.5%;
+  margin-left: 25%;
+  width: 50%;
+  height: 6%;
+  border-bottom: 1px solid gray
+}
+.maincontainer{
+  height: 100%;
+  width: 50%;
+  margin-left: 25%;
+  background-color: white;
+}
+
+.companynamebody{
+  margin-top: 7%;
+  position: absolute;
+  width: 50%;
   height: 5%;
-  width: 100%
 }
-.textlogo{
+.copmpanyname{
   float: left;
-width: 49.9%;
-}
+  font-family: 'Roboto Slab', bold;
+  margin-left: 8.5%;
+  font-size: 64px;
+  width: auto%;
+  height: auto;}
 
-.textminiature{
+.domainlogo{
   float: left;
-width: 49.9%;
-}
+  height: auto;
+  width: auto;
+  margin-left: 2%;
+  margin-top: 2%;
 
-.visit{
-  margin-top: 22%;
-  margin-left: 25%;
-  width: 50%;
-  height: 20%;
-  border: 2px solid black;
-  background-color: #f8f8f8;
-  border-radius: 50px 50px 50px 50px;
 }
-.kupi{
-  color: white;
+.domainlogo:hover:after{
+  content: attr(data-title);
+  z-index: 1;
+  background-color:  #d6d6c2);
+  font-family: 'Roboto Slab', bold;
+  color: #3adb15;
   text-align: center;
-  vertical-align: middle;
-  font-family: 'Noto Sans', bold;
-  padding-top: 5px;
-  font-size: 48px;
-  margin-top: 5%;
-  margin-left: 25%;
-  background-color: red;
+  font-size: 32px;
+  }
+
+.logocontainer{
+  position: absolute;
+  height: 20%;
   width: 50%;
-  height: 10%;
-  border-radius: 50px 50px 50px 50px
+  margin-top: 22.5%;
+}
+
+.roundimgcontainer{
+  margin-top: -20%;
+  position: absolute;
+  margin-bottom: 10%;
+  max-height: 200%;
+  min-height: 200%;
+  min-width: 37.5%;
+  max-width: 37.5%;
+  margin-left: 30%;
+}
+
+
+.webcontainer{
+  position: absolute;
+  height: 475%;
+  margin-top: 38.8%;
+  width: 100%;
+  border-bottom: 1pt solid #c4a1b0;
+}
+
+.visitka{
+  position: absolute;
+  width: 100%;
+  height: 250%;
+  margin-top: 138%;
+  border-bottom: 1pt solid black;
+}
+.invisitka{
+  border: 1px solid black;
+  margin-left: 12.5%;
+  margin-top: 6.25%;
+  height: 75%;
+  width: 75%;
+
 }
