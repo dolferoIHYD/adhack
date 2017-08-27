@@ -37,22 +37,30 @@ class Parser:
        # return 'https://www.logoshuffle.com()'.format(link)
         return link
 
-    def get_picture(self, quwery):
+    def get_pictures(self, quwery):
         self.driver.get('https://www.google.ru/search?q={}&newwindow=1&rlz=1C1CHWL_ruRU751RU752&tbs=isz:l,itp:photo,sur:fmc&tbm=isch&source=lnt&sa=X&ved=0ahUKEwjfq-28ivbVAhUqS5oKHdpGCfoQpwUIHQ&biw=1242&bih=636&dpr=1.1'.format(quwery))
-        try:
-            time.sleep(2)
-            gimage = self.driver.find_element_by_xpath('//*[@id="rg_s"]/div[1]/a/img').click()
-        except:
-            print ('fuck it')
 
-        try:
-            time.sleep(5)
-            button = self.driver.find_element_by_xpath('//*[@id="irc_cc"]/div[2]/div[3]/div[1]/div/div[2]/table[1]/tbody/tr/td[2]/a')
-            lnk =   button.get_attribute('href')
-            print(lnk)
-        except:
-            print("except")
-        return lnk
+        my_awesome_array = []
+        i = 1
+        while(len(my_awesome_array)<4):
+            try:
+                time.sleep(1)
+                gimage = self.driver.find_element_by_xpath('//*[@id="rg_s"]/div[{}]/a/img'.format(i)).click()
+                self.driver.set_page_load_timeout(3)
+            except:
+                print ('fuck it')
+
+            try:
+                time.sleep(1)
+                button = self.driver.find_element_by_xpath('//*[@id="irc_cc"]/div[2]/div[3]/div[1]/div/div[2]/table[1]/tbody/tr/td[2]/a')
+                lnk =   button.get_attribute('href')
+                print(lnk)
+                if(not lnk in my_awesome_array):
+                    my_awesome_array.append(lnk)
+            except:
+                  print("except")
+            i = i+2
+        return my_awesome_array
 
     def create_card(self, company):
         self.driver.get('http://www.lemonprint.ru/vizitki/edit.aspx?template_id=Man03')
